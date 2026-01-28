@@ -1,0 +1,23 @@
+import React from "react";
+import ThemeToggler from "../Helper/ThemeToggler";
+import Hero from "./Hero/Hero";
+import About from "./About/About";
+import Skills from "./skills/Skills";
+import Experiene from "./Experience/Experiene";
+import Education from "./Education/Education";
+import ContactMe from "./ContactMe/ContactMe";
+
+const Home = () => {
+  return (
+    <div className="overflow-hidden bg-gray-100 dark:bg-gray-900 ">
+      <Hero />
+      <About />
+      <Education />
+      <Experiene />
+      <Skills />
+      <ContactMe />
+    </div>
+  );
+};
+
+export default Home;
