@@ -5,7 +5,7 @@ import React from "react";
 
 const Education = () => {
   return (
-    <section className="w-[80%] mx-auto pb-10">
+    <section className="w-[90%] border-t-4 py-4 mx-auto pb-10">
       <div className="flex flex-col  gap-4 mt-4">
         <SectionHeading
           title_1="Education"
@@ -16,8 +16,8 @@ const Education = () => {
           <Image
             src={"/images/FUNAAB LOGO.png"}
             alt="Logo"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
           />
           <div className="flex flex-col gap-2 justify-center">
             <a

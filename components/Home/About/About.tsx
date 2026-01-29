@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className=" relative py-16 bg-gray-100 dark:bg-gray-900 border-t-4"
+      className=" relative py-5 bg-gray-100 dark:bg-gray-900 border-t-4"
     >
       {/* svg */}
       <svg
