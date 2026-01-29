@@ -11,7 +11,7 @@ const ContactMe = () => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    if (!form.current) return;
     emailjs
       .sendForm("service_f4ctodd", "template_rd2kqft", form.current, {
         publicKey: "JTN7BLGeS1tUqwNoX",
@@ -20,13 +20,13 @@ const ContactMe = () => {
         () => {
           console.log("SUCCESS!");
           toast.success("Message sent successfully!");
+          form.current?.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
           toast.error("Not sent, please try again");
         },
       );
-    e.target.reset();
   };
   return (
     <section
