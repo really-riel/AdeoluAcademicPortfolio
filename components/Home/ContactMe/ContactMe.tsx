@@ -7,9 +7,9 @@ import { toast } from "react-toastify";
 import { PhoneCall } from "lucide-react";
 
 const ContactMe = () => {
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     emailjs
