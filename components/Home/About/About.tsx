@@ -28,11 +28,11 @@ const About = () => {
         </g>
       </svg>
 
-      <div className="my-6  p-1 grid gap-4 rounded-md py-10 px-3">
+      <div className="my-6   grid gap-4  py-5 ">
         {/* section heading */}
 
         <SectionHeading title_1="About" title_2="Me" />
-        <div className="w-[80%] mx-auto  items-center">
+        <div className="w-[90%] mx-auto  items-center">
           <p className="text-muted-foreground leading-relaxed">
             I am a Mechanical engineering graduate who is passionate about
             research in sustainable energy. His studies focus on the use of
