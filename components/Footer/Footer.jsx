@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="w-full p-4 text-white bg-blue-950">
       <div className="flex items-center justify-between max-w-[1000px] mx-auto gap-3">
-        <p>Copyright &copy; {year}. All rights reserved </p>
+        <p> &copy; {year} Adeolu Adeyinka. Designed & built by me.</p>
 
         <div className="flex items-center gap-3 *:text-[clamp(1rem,_1rem_+_1vw,_1.5rem)] ">
           {/*  <a href="https://twitter.com/really__riel" target="_blank">
