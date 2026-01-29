@@ -4,6 +4,7 @@ import ThemeToggler from "@/components/Helper/ThemeToggler";
 import { Navlinks } from "@/Constant/Constant";
 import { Download, MenuIcon } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 type Props = {
@@ -23,7 +24,7 @@ const Nav = ({ openNav }: Props) => {
 
     return () => window.removeEventListener("scroll", handler);
   }, []);
-
+  const pathname = usePathname();
   return (
     <nav
       className={`transition-all ${navBg ? "dark:bg-gray-800 bg-white shadow-md" : "fixed"} duration-200 h-[12vh] z-100 fixed w-full`}
@@ -33,11 +34,21 @@ const Nav = ({ openNav }: Props) => {
 
         <div className="hidden md:flex items-center space-x-10">
           {Navlinks.map((link, index) => {
+            const isActive =
+              link.href === "/"
+                ? pathname === "/"
+                : pathname.startsWith(link.href);
             return (
               <Link
                 key={index}
                 href={link.href}
-                className="dark:text-white text-black hover:text-yellow-500 dark:hover:text-yellow-200 font-semibold  transition-all duration-200 "
+                className={`font-semibold transition-all duration-200
+        ${
+          isActive
+            ? "text-blue-500 dark:text-blue-300 border-b-2 border-blue-500"
+            : "text-black dark:text-white hover:text-blue-500 dark:hover:text-blue-200"
+        }
+      `}
               >
                 <p>{link.name}</p>
               </Link>

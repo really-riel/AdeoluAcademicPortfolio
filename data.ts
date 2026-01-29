@@ -1,6 +1,6 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { DiJavascript, DiPython } from "react-icons/di";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa6";
 import { FcPlanner } from "react-icons/fc";
 import { FiTool } from "react-icons/fi";
 import { GiPipes } from "react-icons/gi";
@@ -32,7 +32,7 @@ export const contactInfo = [
 
 export const socialLinks = [
   {
-    icon: FaLinkedinIn,
+    icon: FaLinkedin,
     href: "http://www.linkedin.com/in/adeolu-adeyinka",
     label: "LinkedIn",
   },
@@ -171,75 +171,96 @@ export const skills = [
   },
 ];
 
-export const DomitechGallery = [
+export const GalleryData = [
   {
     id: 1,
-    image: "/images/Domitech/Domitech_5_me.jpeg",
-    caption: "Me at Work",
+    type: "Graduation & Induction",
+    galleryPhotos: [
+      {
+        id: 1,
+        image: "/images/Graduation/Graduation_1.jpeg",
+        caption: "Convocation",
+      },
+      {
+        id: 2,
+        image: "/images/Graduation/Graduation_2.jpeg",
+        caption: "",
+      },
+      {
+        id: 3,
+        image: "/images/Graduation/Graduation_3.jpeg",
+        caption: "Convocation",
+      },
+      {
+        id: 4,
+        image: "/images/Graduation/Induction_1.jpeg",
+        caption: "Nigerian Society of Engineers(NSE) Induction",
+      },
+      {
+        id: 5,
+        image: "/images/Graduation/Induction_2.jpeg",
+        caption: "NSE Induction",
+      },
+      {
+        id: 6,
+        image: "/images/Graduation/Induction_3.jpeg",
+        caption: "NSE Induction",
+      },
+      {
+        id: 7,
+        image: "/images/Graduation/Induction_collegues.jpeg",
+        caption: "NSE Induction",
+      },
+    ],
   },
   {
     id: 2,
-    image: "/images/Domitech/Domitech_1_enclosure_frabrication.jpeg",
-    caption: "Enclosure Fabrication For Caterpillar Gas Generator Set",
+    type: "Final year Project Defense",
+    galleryPhotos: [
+      {
+        id: 1,
+        image: "/images/Defense/Defense_collegeues.jpeg",
+        caption: "",
+      },
+      {
+        id: 2,
+        image: "/images/Defense/Project_Defence_1.jpeg",
+        caption: "",
+      },
+      {
+        id: 3,
+        image: "/images/Defense/Project_defense_collegues.jpeg",
+        caption: "",
+      },
+    ],
   },
   {
     id: 3,
-    image: "/images/Domitech/Domitech_2_enclosure_fabrication.jpeg",
-    caption: "Enclosure Fabrication For Caterpillar Gas Generator Set",
+    type: "Volunteering",
+    galleryPhotos: [
+      {
+        id: 1,
+        image: "/images/Volunteering/NYSC_friends.jpeg",
+        caption: "National Youth Service Corps (NYSC)",
+      },
+      {
+        id: 2,
+        image: "/images/Volunteering/NYSC_passing out.jpeg",
+        caption: "NYSC",
+      },
+      {
+        id: 3,
+        image:
+          "/images/Volunteering/Volunteering_NYSC_Platoon 3 won 2nd place in match past.jpeg",
+        caption: "My platoon finished 2nd at the NYSC match past parade",
+      },
+      {
+        id: 4,
+        image: "/images/Volunteering/Volunteering_NYSC_sign in.jpeg",
+        caption: "NYSC",
+      },
+    ],
   },
-  {
-    id: 4,
-    image: "/images/Domitech/Domitech_3_enclosure.jpeg",
-    caption: "Enclosure Fabrication For Caterpillar Gas Generator Set",
-  },
-  {
-    id: 5,
-    image: "/images/Domitech/Domitech_4_enclosure_fabrication.jpeg",
-    caption: "Enclosure Fabrication For Caterpillar Gas Generator Set",
-  },
-  {
-    id: 6,
-    image: "/images/Domitech/Domitech_5_me.jpeg",
-    caption: "Me at Work",
-  },
-  {
-    id: 7,
-    image: "/images/Domitech/Domitech_6_pipeline_installation.jpeg",
-    caption: "Pipeline installation and Fabrication",
-  },
-  {
-    id: 8,
-    image: "/images/Domitech/Domitech_7_me.jpeg",
-    caption: "Me at Work",
-  },
-  {
-    id: 9,
-    image: "/images/Domitech/Domitech_8_Fix_bad_fan.jpeg",
-    caption: "Fixing Bad Fan on Caterpillar Gas Generator Set",
-  },
-  {
-    id: 10,
-    image: "/images/Domitech/Domitech_9_insulation.jpeg",
-    caption: "Rock-wool inner wall insulation for generator enclosures",
-  },
-  {
-    id: 11,
-    image: "/images/Domitech/Domitech11_enclosure_fabrication.jpeg",
-    caption: "Enclosure Fabrication For Caterpillar Gas Generator Set",
-  },
-];
-
-const VolunteeringGallery = [
-  { id: 1, image: "", caption: "" },
-  { id: 2, image: "", caption: "" },
-  { id: 3, image: "", caption: "" },
-  { id: 4, image: "", caption: "" },
-];
-const GraduationPhoto = [
-  { id: 1, image: "", caption: "" },
-  { id: 2, image: "", caption: "" },
-  { id: 3, image: "", caption: "" },
-  { id: 4, image: "", caption: "" },
 ];
 
 export const WorkExperienceData = [
@@ -390,5 +411,42 @@ export const WorkExperienceData = [
       "Documented maintenance activities",
     ],
     gallery: [],
+  },
+];
+
+export const researchWorks = [
+  {
+    title: "Energetic Analysis of Stout Beer Production Processes",
+    period: "Ongoing",
+    description: "",
+    download: "",
+  },
+  {
+    title:
+      "Development of a Forced Convection Solar Cabinet Dryer with Thermal Energy Storage",
+    period: "Completed",
+    description: `This project introduces a solar drying system that utilises solar energy for drying food substances, reducing agricultural produce wastage and aiding in preservation. The system includes a forced convection solar dryer with thermal energy storage, featuring a solar collector and a drying chamber. Air heated in the collector is channelled into the drying chamber to remove moisture from loaded agricultural produce. A blower efficiently moves the heated air from the solar thermal collector into the drying cabinet. The design considers the location (Abeokuta) and uses meteorological data for specifications. To enhance drying efficiency and maintain consistency, granite is incorporated as a thermal energy storage material. Granite efficiently absorbs and stores excess heat during sunny periods, providing a reserve of thermal energy for cloudy days or night-time. This stored energy helps maintain the drying process when solar radiation is low.
+    The dryer's dimensions are 500 mm × 400 mm × 650 mm, constructed from locally available materials like wood, plywood, polyurethane glass, mild steel, and iron net for the trays. The dryer houses three trays placed 100 mm apart. The recorded maximum temperatures in the collector outlet and the top tray of the drying chamber during four distinct experiments under no-load conditions are as follows: 45.7 and 44.6 °C (with blower and no thermal energy storage material), 52.9 and 51.4 °C (with blower and thermal energy storage material), 80.7 and 59.9°C (without blower and no thermal energy storage material), and 74.4 and 62.4°C (without blower and with thermal energy storage material), respectively. These values obtained showed that the dryer is suitable for drying agriculture products like pepper, okra, cassava and plantain.`,
+    download: "/Docs/Adeolu_Adeyinka_Research_Project_Undergraduate.pdf",
+  },
+];
+
+export const CertificationsData = [
+  {
+    id: 1,
+    photo:
+      "/images/Certifications/Adeolu_Adeyinka_B.Eng_Certificate_page-0001.jpg",
+    description: "B.Eng in Mechanical Engineering",
+  },
+  {
+    id: 2,
+    photo:
+      "/images/Certifications/Adeolu_Adeyinka_IAENG_membership_539246_page-0001.jpg",
+    description: "International Association of Engineers Membership",
+  },
+  {
+    id: 3,
+    photo: "/images/Certifications/Adeolu_NSE_Certificate_page-0001.jpg",
+    description: "Nigerian Society of Engineers (NSE) Membership",
   },
 ];

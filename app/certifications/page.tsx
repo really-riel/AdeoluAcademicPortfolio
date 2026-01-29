@@ -1,7 +1,8 @@
+import Certifications from "@/components/Certificatons/Certifications";
 import React from "react";
 
-const certifications = () => {
-  return <div>certifications</div>;
+const certificationsPage = () => {
+  return <Certifications />;
 };
 
-export default certifications;
+export default certificationsPage;

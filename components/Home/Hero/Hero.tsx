@@ -4,7 +4,7 @@ import { MdArrowDownward } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <section className="relative bg-[radial-gradient(circle_476px_at_54.8%_51.5%,rgba(168,229,253,1)_0%,rgba(244,244,254,1)_42.3%,rgba(244,244,254,1)_100.2%)] grid w-full px-2 py-20 overflow-hidden min-h-svh dark:bg-gray-900 dark:bg-none place-content-center ">
+    <section className="relative bg-[radial-gradient(circle_476px_at_54.8%_51.5%,rgba(168,229,253,1)_0%,rgba(244,244,254,1)_42.3%,rgba(244,244,254,1)_100.2%)] grid w-full px-2 pb-20 overflow-hidden min-h-svh dark:bg-gray-900 dark:bg-none place-content-center ">
       <div className="text-[clamp(1rem,_0.2rem_+_1vw,_2rem)]  flex flex-col justify-center lg:flex-row-reverse  mx-auto gap-6">
         <figure className="w-52 h-52 blob max-sm[]:bg-red-500 md:w-80 md:h-80 lg:w-110 lg:h-110 rounded-[50%] overflow-hidden mx-auto">
           <img
@@ -25,20 +25,20 @@ const Hero = () => {
           <p>
             find out more <span className="font-semibold">about me.</span>{" "}
           </p>
-          {/* <div className="flex items-center gap-3 ">
+          <div className="flex items-center gap-3 ">
             {socialLinks.map((link, index) => {
               return (
                 <a
                   key={index}
                   href={link.href}
                   target="_blank"
-                  className="bg-blue-100 w-10  rounded-[50%]  h-10 grid  place-content-center"
+                  className="bg-blue-100 w-10  rounded-[50%] dark:text-black h-10 grid  place-content-center"
                 >
-                  {link.icon}
+                  <link.icon />
                 </a>
               );
             })}
-          </div> */}
+          </div>
         </div>
         <a
           href="#aboutMe"

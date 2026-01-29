@@ -4,6 +4,7 @@ import "./globals.css";
 import Provider from "@/components/Hoc/Provider";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Footer/Footer";
+import { ToastContainer } from "react-toastify";
 
 const font = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -24,8 +25,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${font.className} relative antialiased`}>
         {" "}
+        <ToastContainer position="top-right" />
         <Provider>
-          <div className=" relative w-full overflow-hidden  bg-gray-100 dark:bg-gray-900">
+          <div className=" flex flex-col min-h-svh relative w-full overflow-hidden  bg-gray-100 dark:bg-gray-900">
             <svg
               id="visual"
               viewBox="0 0 1000 1300"
@@ -44,7 +46,7 @@ export default function RootLayout({
             </svg>
 
             <ResponsiveNav />
-            <main className="w-full mx-auto max-w-[1200px] flex flex-col gap-6   ">
+            <main className="w-full mx-auto flex-1 max-w-[1200px] flex flex-col gap-6   ">
               {children}
             </main>
             <Footer />

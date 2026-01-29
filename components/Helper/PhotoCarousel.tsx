@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
+import React, { useMemo } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import PhotoCards from "../Helper/PhotoCards";
+import ShuffleArray from "./ShuffleArray";
 
 type Props = {
   gallery: {
@@ -12,7 +13,7 @@ type Props = {
   }[];
 };
 
-const WorkGallery = ({ gallery }: Props) => {
+const PhotoCarousel = ({ gallery }: Props) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1324 },
@@ -30,6 +31,9 @@ const WorkGallery = ({ gallery }: Props) => {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
+
+  const randomizedImages = useMemo(() => ShuffleArray(gallery), [gallery]);
+
   return (
     <section className="py-6 ">
       <Carousel
@@ -39,7 +43,7 @@ const WorkGallery = ({ gallery }: Props) => {
         autoPlaySpeed={5000}
         arrows={true}
       >
-        {gallery.map((item, index) => (
+        {randomizedImages.map((item, index) => (
           <div className="" key={index}>
             <PhotoCards ImageData={item} />
           </div>
@@ -49,4 +53,4 @@ const WorkGallery = ({ gallery }: Props) => {
   );
 };
 
-export default WorkGallery;
+export default PhotoCarousel;
