@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className=" relative py-16 bg-gray-100 dark:bg-gray-900"
+      className=" relative py-16 bg-gray-100 dark:bg-gray-900 border-t-4"
     >
       {/* svg */}
       <svg
@@ -63,11 +63,11 @@ const About = () => {
 
           {/* research interest */}
 
-          <div className="mt-7 flex flex-col gap-5">
+          <div className="mt-7 flex flex-col gap-5 border-t-4 pt-4">
             <h3 className="text-2xl font-bold text-center">
               Research Interest
             </h3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt4 ">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1  ">
               {researchInterest.map((interest: string, index) => {
                 return (
                   <div className="flex items-center" key={index}>
