@@ -4,7 +4,7 @@ import { MdArrowDownward } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <section className="relative bg-[radial-gradient(circle_476px_at_54.8%_51.5%,rgba(168,229,253,1)_0%,rgba(244,244,254,1)_42.3%,rgba(244,244,254,1)_100.2%)] grid w-full px-2 pb-20 overflow-hidden min-h-svh dark:bg-gray-900 dark:bg-none place-content-center ">
+    <section className="relative bg-[radial-gradient(circle_476px_at_54.8%_51.5%,rgba(168,229,253,1)_0%,rgba(244,244,254,1)_42.3%,rgba(244,244,254,1)_100.2%)] grid w-full px-2 pb-10 overflow-hidden min-h-svh dark:bg-gray-900 dark:bg-none place-content-center ">
       <div className="text-[clamp(1rem,_0.2rem_+_1vw,_2rem)]  flex flex-col justify-center lg:flex-row-reverse  mx-auto gap-6">
         <figure className="w-52 h-52 blob max-sm[]:bg-red-500 md:w-80 md:h-80 lg:w-110 lg:h-110 rounded-[50%] overflow-hidden mx-auto">
           <img
