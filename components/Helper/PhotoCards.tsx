@@ -11,7 +11,7 @@ type Props = {
 
 const PhotoCards = ({ ImageData }: Props) => {
   return (
-    <div className="rounded-t-2xl  shadow bg-blue-200-50 overflow-hidden w-[355px]  border-b-2">
+    <div className="rounded-t-2xl  shadow bg-blue-200-50 overflow-hidden w-full  border-b-2">
       <img
         alt="Image"
         src={ImageData.image}
