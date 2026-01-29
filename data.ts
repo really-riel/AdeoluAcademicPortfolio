@@ -228,48 +228,6 @@ export const DomitechGallery = [
     caption: "Enclosure Fabrication For Caterpillar Gas Generator Set",
   },
 ];
-const GuinnessGallery = [
-  {
-    id: 1,
-    image: "/images/Guinness/Guinness_ machine repair.jpeg",
-    caption: "Machine maintenace",
-  },
-  {
-    id: 2,
-    image: "/images/Guinness/Guinness_1_at office.jpeg",
-    caption: "Me at the Office",
-  },
-  {
-    id: 3,
-    image: "/images/Guinness/Guinness_HMI operation.jpeg",
-    caption: "Operation of the HMI",
-  },
-  {
-    id: 4,
-    image: "/images/Guinness/Guinness_Labeller overhaul_2.jpeg",
-    caption: "Labeller Machine Overhaul",
-  },
-  {
-    id: 5,
-    image: "/images/Guinness/Guinness_Labeller overhaul.jpeg",
-    caption: "Labeller Machine Overhaul",
-  },
-  {
-    id: 6,
-    image: "/images/Guinness/Guinness_machine_repair.jpeg",
-    caption: "Machine Maintenance",
-  },
-  {
-    id: 7,
-    image: "/images/Guinness/guinness_office.jpeg",
-    caption: "at the Office",
-  },
-  {
-    id: 8,
-    image: "/images/Guinness/Guinness_Work.jpeg",
-    caption: "at the Office",
-  },
-];
 
 const VolunteeringGallery = [
   { id: 1, image: "", caption: "" },
@@ -330,12 +288,12 @@ export const WorkExperienceData = [
       {
         id: 7,
         image: "/images/Guinness/guinness_office.jpeg",
-        caption: "at the Office",
+        caption: "At the Office",
       },
       {
         id: 8,
         image: "/images/Guinness/Guinness_Work.jpeg",
-        caption: "at the Office",
+        caption: "At the Office",
       },
     ],
   },

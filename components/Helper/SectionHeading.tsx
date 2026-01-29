@@ -3,7 +3,7 @@ import React from "react";
 type Props = {
   title_1: string;
   title_2: string;
-  description: string;
+  description?: string;
 };
 
 const SectionHeading = ({ title_1, title_2, description }: Props) => {
