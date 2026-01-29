@@ -49,7 +49,7 @@ const Education = () => {
             <p></p>
             <div className="">
               <a
-                href="/docs/Adeolu-Transcript.pdf"
+                href="/Docs/Adeolu-Transcript.pdf"
                 download
                 className=" gap-1 boxborder relative z-20 inline-flex items-center justify-center w-auto px-6 sm:px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-blue-950 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-blue-500 ease focus:outline-none "
               >

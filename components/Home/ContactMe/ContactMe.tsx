@@ -31,7 +31,7 @@ const ContactMe = () => {
   return (
     <section
       id="contact"
-      className="py-20 bg-gray-100 dark:bg-gray-900 min-h-svh-[90svh] scroll-mt-12"
+      className="py-20 border-t-4 bg-gray-100 dark:bg-gray-900 min-h-[90svh] scroll-mt-12"
     >
       <div className="w-[80%] mx-auto">
         <SectionHeading title_1="Contact" title_2="Me" description="" />

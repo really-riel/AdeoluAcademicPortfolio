@@ -5,9 +5,9 @@ import SkillsCards from "./SkillsCards";
 
 const Skills = () => {
   return (
-    <section className="py-16 bg-gray-100 dark:bg-gray-950">
+    <section className="py-16 border-t-4 bg-gray-100 dark:bg-gray-950">
       <SectionHeading title_1="Techincal" title_2="Skills" />
-      <div className="space-y-12 w-[80%] mx-auto">
+      <div className="space-y-12 w-[90%] mx-auto">
         {skills.map((skill, index) => (
           <div className="" key={index}>
             <h3 className="text-xl font-semibold mb-6 flex items-center gap-3">

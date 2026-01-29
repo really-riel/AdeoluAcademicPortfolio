@@ -5,7 +5,7 @@ import React from "react";
 
 const Experiene = () => {
   return (
-    <section className="py-16 bg-gray-100 dark:bg-gray-950">
+    <section className="py-8 border-t-4 bg-gray-100 dark:bg-gray-950">
       <SectionHeading
         title_1="Experience"
         title_2=""
