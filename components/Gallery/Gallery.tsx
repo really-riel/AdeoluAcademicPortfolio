@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeading from "../Helper/SectionHeading";
 import PhotoCarousel from "../Helper/PhotoCarousel";
-import { GalleryData, GraduationGallery } from "@/data";
+import { GalleryData } from "@/data";
 
 const Gallery = () => {
   return (
