@@ -9,14 +9,14 @@ import ContactMe from "./ContactMe/ContactMe";
 
 const Home = () => {
   return (
-    <div className="overflow-hidden bg-gray-100 dark:bg-gray-900 ">
+    <>
       <Hero />
       <About />
       <Education />
       <Experiene />
       <Skills />
       <ContactMe />
-    </div>
+    </>
   );
 };
 

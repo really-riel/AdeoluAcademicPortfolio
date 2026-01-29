@@ -18,7 +18,7 @@ const About = () => {
         height="1400"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        className="z-0 absolute -top-20 -left-[920px]  lg:-left-[1000px] "
+        className="-z-5 absolute -top-20 -left-[920px]  lg:-left-[1000px] "
       >
         <g transform="translate(489.79892233902535 503.8402273150739)">
           <path
