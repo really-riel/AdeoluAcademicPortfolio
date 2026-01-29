@@ -1,7 +1,6 @@
 import React from "react";
 import SectionHeading from "../Helper/SectionHeading";
 import { WorkExperienceData } from "@/data";
-import { Dot } from "lucide-react";
 import PhotoCarousel from "../Helper/PhotoCarousel";
 
 const WorkExperience = () => {
@@ -21,7 +20,6 @@ const WorkExperience = () => {
             <div className="">
               {work.duties.map((duty, index) => (
                 <ul className="flex items-center list-disc pl-3" key={index}>
-                  {/* <Dot className="w-10 h-10" /> */}
                   <li className="">{duty}</li>
                 </ul>
               ))}
