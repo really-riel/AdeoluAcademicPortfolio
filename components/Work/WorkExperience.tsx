@@ -20,8 +20,8 @@ const WorkExperience = () => {
             <div className="font-light">{work.period}</div>
             <div className="">
               {work.duties.map((duty, index) => (
-                <ul className="flex items-center" key={index}>
-                  <Dot className="w-10 h-10" />
+                <ul className="flex items-center list-disc pl-3" key={index}>
+                  {/* <Dot className="w-10 h-10" /> */}
                   <li className="">{duty}</li>
                 </ul>
               ))}
