@@ -1,5 +1,5 @@
 import SectionHeading from "@/components/Helper/SectionHeading";
-import { researchInterest } from "@/data";
+import { hobbies, researchInterest } from "@/data";
 import { Dot, DotSquareIcon, Download, Link } from "lucide-react";
 import Image from "next/image";
 import React from "react";
@@ -33,33 +33,35 @@ const About = () => {
 
         <SectionHeading title_1="About" title_2="Me" />
         <div className="w-[90%] mx-auto  items-center">
-          <p className="text-muted-foreground leading-relaxed">
-            I am a Mechanical engineering graduate who is passionate about
-            research in sustainable energy. His studies focus on the use of
-            various computer science research areas such as artificial
-            intelligence, machine learning, pattern recognition, computer
-            vision, image processing and sensors and acquisition to develop
-            novel imaging techniques that allow doctors to achieve a much more
-            accurate diagnosis of the most important diseases (e.g. cancer) at
-            an early stage.
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            His research interests are in areas related to medical imaging and
-            applications such as image segmentation, image registration,
-            computer-aided surgery and medical robotics, computer-aided
-            diagnosis, and telehealth. Taofik is passionate about learning,
-            networking, and travelling since it allows him to interact with
-            individuals from
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            He has also demonstrated exceptional leadership qualities and has
-            participated in extracurricular activities that have helped both
-            students and the community over time. Over the years, he has
-            volunteered with several professional and local organizations to
-            positively impact society. Taofik enjoys teaching and mentoring, and
-            his mentees have developed a community of scholars thriving in their
-            fields.
-          </p>
+          <div className="flex flex-col gap-4">
+            <p className="text-muted-foreground leading-relaxed">
+              I am Adeolu Adeyinka, a passionate mechanical engineer dedicated
+              to advancing clean and accessible energy solutions. My journey is
+              fueled by a strong interest in heat and mass transfer, thermal
+              energy storage, and solar technologies, all aimed at supporting
+              Sustainable Development Goal 7. I have hands-on experience
+              developing a solar-powered dryer with thermal storage, which
+              successfully improved drying efficiency for local crops, blending
+              technical innovation with practical, sustainable impact.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Professionally, I work as an Engineering Support Specialist, where
+              I enhance operational efficiency, and I also enjoy building web
+              applications that solve real-world problems. Beyond my technical
+              roles, I actively participate in programs like the Sustainable
+              Energy Accelerator, always seeking to learn and contribute to a
+              greener future. I believe in using engineering and technology to
+              create systems that are not only efficient but also
+              environmentally friendly and equitable.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              I am excited by projects that merge renewable energy, smart
+              design, and community benefit. Whether through research, industry
+              collaboration, or volunteering, my goal is to contribute
+              meaningfully to sustainable energy access and inspire others along
+              the way.
+            </p>
+          </div>
 
           {/* research interest */}
 
@@ -69,6 +71,19 @@ const About = () => {
             </h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1  ">
               {researchInterest.map((interest: string, index) => {
+                return (
+                  <div className="flex items-center" key={index}>
+                    <Dot className="w-10 h-10" />
+                    <li className="">{interest}</li>
+                  </div>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="mt-7 flex flex-col gap-5 border-t-4 pt-4">
+            <h3 className="text-2xl font-bold text-center">Hobbies</h3>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1  ">
+              {hobbies.map((interest: string, index) => {
                 return (
                   <div className="flex items-center" key={index}>
                     <Dot className="w-10 h-10" />

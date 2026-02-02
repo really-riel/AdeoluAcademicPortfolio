@@ -398,6 +398,62 @@ export const WorkExperienceData = [
         image: "/images/Domitech/Domitech11_enclosure_fabrication.jpeg",
         caption: "Enclosure Fabrication For Caterpillar Gas Generator Set",
       },
+      {
+        id: 12,
+        image: "/images/Domitech/Domitec_pipeline_installation_2.jpeg",
+        caption: "Pipeline installation and fabrication",
+      },
+      {
+        id: 13,
+        image: "/images/Domitech/Domitech_ gas train.jpeg",
+        caption: "Gas train",
+      },
+      {
+        id: 14,
+        image: "/images/Domitech/Domitech_at work.jpeg",
+        caption: "At work",
+      },
+      {
+        id: 15,
+        image: "/images/Domitech/Domitech_Caterpillar gas generator set.jpeg",
+        caption: "Mantrac Caterpillar Gas generator Set",
+      },
+      {
+        id: 16,
+        image: "/images/Domitech/Domitech_completed_enclosure_2.jpeg",
+        caption: "Completed Caterpillar Gas Generator Set Encolsure",
+      },
+      {
+        id: 17,
+        image: "/images/Domitech/Domitech_completed_enclosure.jpeg",
+        caption: "Completed Caterpillar Gas Generator Set Encolsure",
+      },
+      {
+        id: 18,
+        image:
+          "/images/Domitech/Domitech_enclosure_interior_prepipeline installation.jpeg",
+        caption: "Enclosure Interior",
+      },
+      {
+        id: 19,
+        image: "/images/Domitech/Domitech_Pipeline installation.jpeg",
+        caption: "Pipeline Installation",
+      },
+      {
+        id: 20,
+        image: "/images/Domitech/Domitech_Pipeline_installation_3.jpeg",
+        caption: "Pipeline Installation",
+      },
+      {
+        id: 21,
+        image: "/images/Domitech/Domitech_Pipeline_installtion_ 5.jpeg",
+        caption: "Pipeline Installation",
+      },
+      {
+        id: 22,
+        image: "/images/Domitech/Domitech_pipeline_installtion_4.jpeg",
+        caption: "Pipeline Installation",
+      },
     ],
   },
   {
@@ -448,5 +504,23 @@ export const CertificationsData = [
     id: 3,
     photo: "/images/Certifications/Adeolu_NSE_Certificate_page-0001.jpg",
     description: "Nigerian Society of Engineers (NSE) Membership",
+  },
+  {
+    id: 4,
+    photo: "/images/Certifications/Cursa_Artificial_with_ python_ by CS50.jpeg",
+    description: "Artificial Intelligience with Python by CS50 on CURSA.",
+  },
+  {
+    id: 5,
+    photo:
+      "/images/Certifications/Cursa_Python for beginners by google career certificates.jpeg",
+    description:
+      "Python for Beginners by Google Careers Certificates on CURSA.",
+  },
+  {
+    id: 6,
+    photo:
+      "/images/Certifications/Cursa_renewable_energy_engineering_by_NPTEL.jpeg",
+    description: "Renewable Energy Engineering by NPTEL on CURSA.",
   },
 ];

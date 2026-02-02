@@ -1,13 +1,15 @@
+"use client";
 import React from "react";
-import ThemeToggler from "../Helper/ThemeToggler";
 import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Skills from "./skills/Skills";
 import Experiene from "./Experience/Experiene";
 import Education from "./Education/Education";
 import ContactMe from "./ContactMe/ContactMe";
+import { useHashScroll } from "../Hooks/hooks";
 
 const Home = () => {
+  useHashScroll();
   return (
     <>
       <Hero />
