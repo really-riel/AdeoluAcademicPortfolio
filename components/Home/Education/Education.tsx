@@ -46,7 +46,10 @@ const Education = () => {
               <span className="font-bold">Thesis Title:</span> Development of a
               Forced Convection Solar Cabinet Dryer with Thermal Energy Storage
             </p>
-            <p></p>
+            <p>
+              <span className="font-bold">Supervisor:</span> Prof. M.A
+              Waheed{" "}
+            </p>
             <div className="">
               <a
                 href="/Docs/Adeolu-Transcript.pdf"
