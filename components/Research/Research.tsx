@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeading from "../Helper/SectionHeading";
-import { DotIcon, Download } from "lucide-react";
+import { Download } from "lucide-react";
 import { researchWorks } from "@/data";
 import { GoDotFill } from "react-icons/go";
 

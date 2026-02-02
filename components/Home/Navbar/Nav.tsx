@@ -1,6 +1,7 @@
 "use client";
 import Logo from "@/components/Helper/Logo";
 import ThemeToggler from "@/components/Helper/ThemeToggler";
+import { useScrollToSection } from "@/components/Hooks/hooks";
 import { Navlinks } from "@/Constant/Constant";
 import { Download, MenuIcon } from "lucide-react";
 import Link from "next/link";
@@ -25,6 +26,7 @@ const Nav = ({ openNav }: Props) => {
     return () => window.removeEventListener("scroll", handler);
   }, []);
   const pathname = usePathname();
+  const { scrollToSection } = useScrollToSection();
   return (
     <nav
       className={`transition-all ${navBg ? "dark:bg-gray-800 bg-white shadow-md" : "fixed"} duration-200 h-[12vh] z-100 fixed w-full`}
@@ -44,6 +46,9 @@ const Nav = ({ openNav }: Props) => {
               <Link
                 key={index}
                 href={link.href}
+                onClick={() =>
+                  link.href === "/#contact" ? scrollToSection("contact") : null
+                }
                 className={`font-semibold transition-all duration-200
         ${
           isActive
@@ -56,6 +61,14 @@ const Nav = ({ openNav }: Props) => {
               </Link>
             );
           })}
+          {/* <div
+            onClick={() => scrollToSection("contact")}
+            className={`font-semibold transition-all duration-200 "text-black cursor-pointer dark:text-white hover:text-blue-500 dark:hover:text-blue-200"
+        
+      `}
+          >
+            <p>Contact</p>
+          </div> */}
         </div>
         <div className="flex items-center space-x-4">
           <a

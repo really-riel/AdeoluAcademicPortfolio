@@ -1,3 +1,4 @@
+import { useScrollToSection } from "@/components/Hooks/hooks";
 import { Navlinks } from "@/Constant/Constant";
 import { X } from "lucide-react";
 import Link from "next/link";
@@ -12,6 +13,7 @@ type Props = {
 const MobileNav = ({ showNav, closeNav }: Props) => {
   const sideBarOpenClose = showNav ? "translate-x-0" : "translate-x-[-100%]";
   const pathname = usePathname();
+  const { scrollToSection } = useScrollToSection();
 
   return (
     <div>
@@ -24,7 +26,14 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
         {Navlinks.map((link, index) => {
           const isActive = pathname === link.href;
           return (
-            <Link key={index} href={link.href} onClick={closeNav}>
+            <Link
+              key={index}
+              href={link.href}
+              onClick={() => {
+                closeNav();
+                link.href === "/#contact" && scrollToSection("contact");
+              }}
+            >
               <p
                 className={`${isActive ? "text-blue-400 border-blue-400" : "text-white border-white"} w-fit text-[20px] ml-12 border-b-[1.5px] pb-1  sm:text-[30px]`}
               >

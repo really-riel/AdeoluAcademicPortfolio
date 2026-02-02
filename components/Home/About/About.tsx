@@ -1,7 +1,7 @@
 import SectionHeading from "@/components/Helper/SectionHeading";
 import { hobbies, researchInterest } from "@/data";
-import { Dot, DotSquareIcon, Download, Link } from "lucide-react";
-import Image from "next/image";
+import { Dot } from "lucide-react";
+
 import React from "react";
 
 const About = () => {
