@@ -33,6 +33,10 @@ const Research = () => {
 
               {work.description && (
                 <div className="mt-3">
+                  <h3 className="mb-2">
+                    <span className="font-semibold">Supervisor: </span>Prof. M.A
+                    Waheed
+                  </h3>
                   <h3 className="font-semibold">Abstract:</h3>
                   <p className="mt-2 text-gray-700 dark:text-gray-300 leading-relaxed">
                     {work.description}

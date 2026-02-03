@@ -49,7 +49,7 @@ const ContactMe = () => {
           </p>
 
           <a
-            href="mailto:ag.adeyinka@gmail.com"
+            href="mailto:adeyinka.ag@gmail.com"
             className="flex items-center gap-2  w-fit hover:scale-110 transition-all mt-4 "
           >
             {" "}
@@ -57,7 +57,7 @@ const ContactMe = () => {
             adeyinka.ag@gmail.com
           </a>
           <a
-            href="tel:+23481235979705"
+            href="tel:+2348123597905"
             className="flex items-center w-fit hover:scale-110 transition-all  gap-2 mt-4"
           >
             <PhoneCall className="text-xl" />

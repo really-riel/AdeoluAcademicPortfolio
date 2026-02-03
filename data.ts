@@ -481,6 +481,7 @@ export const researchWorks = [
     title:
       "Development of a Forced Convection Solar Cabinet Dryer with Thermal Energy Storage",
     period: "Completed",
+    supervisor: "Prof. M.A Waheed",
     description: `This project introduces a solar drying system that utilises solar energy for drying food substances, reducing agricultural produce wastage and aiding in preservation. The system includes a forced convection solar dryer with thermal energy storage, featuring a solar collector and a drying chamber. Air heated in the collector is channelled into the drying chamber to remove moisture from loaded agricultural produce. A blower efficiently moves the heated air from the solar thermal collector into the drying cabinet. The design considers the location (Abeokuta) and uses meteorological data for specifications. To enhance drying efficiency and maintain consistency, granite is incorporated as a thermal energy storage material. Granite efficiently absorbs and stores excess heat during sunny periods, providing a reserve of thermal energy for cloudy days or night-time. This stored energy helps maintain the drying process when solar radiation is low.
     The dryer's dimensions are 500 mm × 400 mm × 650 mm, constructed from locally available materials like wood, plywood, polyurethane glass, mild steel, and iron net for the trays. The dryer houses three trays placed 100 mm apart. The recorded maximum temperatures in the collector outlet and the top tray of the drying chamber during four distinct experiments under no-load conditions are as follows: 45.7 and 44.6 °C (with blower and no thermal energy storage material), 52.9 and 51.4 °C (with blower and thermal energy storage material), 80.7 and 59.9°C (without blower and no thermal energy storage material), and 74.4 and 62.4°C (without blower and with thermal energy storage material), respectively. These values obtained showed that the dryer is suitable for drying agriculture products like pepper, okra, cassava and plantain.`,
     download: "/Docs/Adeolu_Adeyinka_Research_Project_Undergraduate.pdf",
@@ -522,5 +523,43 @@ export const CertificationsData = [
     photo:
       "/images/Certifications/Cursa_renewable_energy_engineering_by_NPTEL.jpeg",
     description: "Renewable Energy Engineering by NPTEL on CURSA.",
+  },
+  {
+    id: 7,
+    photo:
+      "/images/Certifications/Adeolu_Adeyinka_ Energy resources_solar energy_S278_6_statement_page-0001.jpg",
+    description: "Energy Resources: Solar Energy by Open University",
+  },
+  {
+    id: 8,
+    photo:
+      "/images/Certifications/Adeolu_Adeyinka_ Engineering_The challenge of temperature_T207_2_statement_page-0001.jpg",
+    description:
+      "Engineering: The Challenge of Temperature by The Open University",
+  },
+
+  {
+    id: 10,
+    photo:
+      "/images/Certifications/Adeolu_Adeyinka_ Systems engineering_Challenging complexity_T837_1_statement_page-0001.jpg",
+    description: "Systems Engineering by The Open University",
+  },
+  {
+    id: 11,
+    photo:
+      "/images/Certifications/Adeolu_Adeyinka_AIIDEV_Africa_Sustainable Energy Accelerator_page-0001.jpg",
+    description: "Sustainable Energy Accelerator by AIIDEV Africa",
+  },
+  {
+    id: 12,
+    photo:
+      "/images/Certifications/Adeolu_Adeyinka_EF SET Certificate_page-0001.jpg",
+    description: "EF SET English Ceritificate",
+  },
+  {
+    id: 13,
+    photo: "/images/Certifications/Adeolu_NYSC_Certificate_page-0001.jpg",
+    description:
+      "Volunteering: National Youth Service Corps (NYSC) Certificate",
   },
 ];

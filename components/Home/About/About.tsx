@@ -35,14 +35,14 @@ const About = () => {
         <div className="w-[90%] mx-auto  items-center">
           <div className="flex flex-col gap-4">
             <p className="text-muted-foreground leading-relaxed">
-              I am Adeolu Adeyinka, a passionate mechanical engineer dedicated
-              to advancing clean and accessible energy solutions. My journey is
-              fueled by a strong interest in heat and mass transfer, thermal
-              energy storage, and solar technologies, all aimed at supporting
-              Sustainable Development Goal 7. I have hands-on experience
-              developing a solar-powered dryer with thermal storage, which
-              successfully improved drying efficiency for local crops, blending
-              technical innovation with practical, sustainable impact.
+              I am a passionate mechanical engineer dedicated to advancing clean
+              and accessible energy solutions. My journey is fueled by a strong
+              interest in heat and mass transfer, thermal energy storage, and
+              solar technologies, all aimed at supporting Sustainable
+              Development Goal 7. I have hands-on experience developing a
+              solar-powered dryer with thermal storage, which successfully
+              improved drying efficiency for local crops, blending technical
+              innovation with practical, sustainable impact.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Professionally, I work as an Engineering Support Specialist, where
