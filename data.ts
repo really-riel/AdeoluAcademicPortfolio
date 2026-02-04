@@ -507,6 +507,12 @@ export const CertificationsData = [
     description: "Nigerian Society of Engineers (NSE) Membership",
   },
   {
+    id: 14,
+    photo:
+      "/images/Certifications/Adeolu Adeyinka - Intro to Machine Learning.png",
+    description: "Intro to Machine Learning by Kaggle",
+  },
+  {
     id: 4,
     photo: "/images/Certifications/Cursa_Artificial_with_ python_ by CS50.jpeg",
     description: "Artificial Intelligience with Python by CS50 on CURSA.",
