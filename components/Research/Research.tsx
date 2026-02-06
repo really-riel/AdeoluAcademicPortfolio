@@ -5,6 +5,7 @@ import { researchWorks } from "@/data";
 import { GoDotFill } from "react-icons/go";
 import PhotoCarousel from "../Helper/PhotoCarousel";
 import Image from "next/image";
+import { FaChevronRight } from "react-icons/fa6";
 
 const Research = () => {
   return (
@@ -46,22 +47,11 @@ const Research = () => {
                     </p>
                   </div>
                 )}
-
-                {work.download && (
-                  <a
-                    download
-                    href={work.download}
-                    className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-blue-950 text-white font-bold rounded-md transition-all hover:bg-blue-800"
-                  >
-                    <Download className="w-4 h-4" />
-                    Paper
-                  </a>
-                )}
               </div>
             </div>
             {work.images && (
-              <div className="">
-                <div className="flex  gap-6 w-full overflow-x-scroll">
+              <div className="relative">
+                <div className="flex  gap-6 w-full overflow-x-auto ">
                   {work.images.map((image, index) => (
                     <div
                       key={index}
@@ -78,7 +68,22 @@ const Research = () => {
                     </div>
                   ))}
                 </div>
+                <div className="absolute right-0 top-1/2 transform -translate-1/2">
+                  <div className="rounded-full p-2 bg bg-black/50 ">
+                    <FaChevronRight className="text-blue-100 text-2xl " />
+                  </div>
+                </div>
               </div>
+            )}
+            {work.download && (
+              <a
+                download
+                href={work.download}
+                className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-blue-950 text-white font-bold rounded-md transition-all hover:bg-blue-800"
+              >
+                <Download className="w-4 h-4" />
+                Paper
+              </a>
             )}
           </div>
         ))}
