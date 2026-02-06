@@ -7,7 +7,7 @@ type Props = {
     image: string;
     caption: string;
   };
-  type: string;
+  type?: string;
 };
 
 const PhotoCards = ({ ImageData, type }: Props) => {
