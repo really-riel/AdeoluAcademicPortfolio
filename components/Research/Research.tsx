@@ -59,16 +59,21 @@ const Research = () => {
                 )}
               </div>
             </div>
-            <div className="flex flex-col w-full overflow-hidden">
-              {work.images?.map((image, index) => (
-                <div key={index} className="w-96 h-72 ">
-                  <img
-                    alt={image.caption}
-                    src={image.image}
-                    className="object-fill w-full h-full"
-                  />
-                </div>
-              ))}
+            <div className="">
+              <div className="flex h-fit gap-2 w-full overflow-x-scroll">
+                {work.images?.map((image, index) => (
+                  <div key={index} className="min-w-96 min-h-72 ">
+                    <img
+                      alt={image.caption}
+                      src={image.image}
+                      className="object-fill w-full h-full"
+                    />
+                  </div>
+                ))}
+              </div>
+              <h3 className="text-center font-semibold">
+                Solar Dryer Design & Experimental Setup
+              </h3>
             </div>
           </div>
         ))}
