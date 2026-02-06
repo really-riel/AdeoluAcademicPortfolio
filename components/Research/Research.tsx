@@ -12,47 +12,43 @@ const Research = () => {
     <section className="py-20 px-5">
       <SectionHeading title_1="Research" title_2="Experience" />
 
-      <ul className="relative flex flex-col max-w-4xl mx-auto ">
+      <ul className="relative flex flex-col gap-4 max-w-4xl mx-auto ">
         {researchWorks.map((work, index) => (
-          <li key={index} className="">
-            <div className="flex items-start gap-2 mb-12 relative">
-              {/* Dot */}
-              <div className="md:flex  hidden flex-col  items-center justify-center">
-                <GoDotFill className="w-2  h-2  text-blue-500 md:w-4 md:h-4 md:mt-1 mt-1.5" />
-              </div>
-
-              {/* Content */}
-              <div className="flex-1">
-                <div className="flex justify-between items-center">
-                  <h2 className="text-sm md:text-xl font-bold">{work.title}</h2>
-                  {work.period && (
-                    <span className="italic text-sm text-gray-500">
-                      {work.period}
-                    </span>
-                  )}
-                </div>
-
-                {work.description && (
-                  <div className="mt-3">
-                    <h3 className="mb-2">
-                      <span className="font-semibold">Supervisor: </span>Prof.
-                      M.A Waheed
-                    </h3>
-                    <h3 className="font-semibold">Abstract:</h3>
-                    <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-                      {work.description}
-                    </p>
-                  </div>
+          <li key={index} className="border-b-4  last:border-b-0 pb-6">
+            {/* Content */}
+            <div className="flex-1">
+              <div className="flex justify-between items-center">
+                <h2 className="text-sm md:text-xl font-bold">{work.title}</h2>
+                {work.period && (
+                  <span className="italic text-sm text-gray-500">
+                    {work.period}
+                  </span>
                 )}
               </div>
+
+              {work.description && (
+                <div className="mt-3">
+                  <h3 className="mb-2  text-sm md:text-xl">
+                    <span className=" font-semibold">Supervisor: </span>
+                    Prof. M.A Waheed
+                  </h3>
+                  <h3 className="font-semibold text-sm md:text-xl">
+                    Abstract:
+                  </h3>
+                  <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                    {work.description}
+                  </p>
+                </div>
+              )}
             </div>
+
             {work.images && (
-              <div className="-mt-10">
+              <div className="">
                 <PhotoCarousel gallery={work.images} type={"research"} />
                 <a
                   download
                   href={work.download}
-                  className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-blue-950 text-white font-bold rounded-md transition-all hover:bg-blue-800 ml-2"
+                  className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-blue-950 text-white font-bold rounded-md transition-all hover:bg-blue-800 ml-1"
                 >
                   <Download className="w-4 h-4" />
                   Paper
