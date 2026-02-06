@@ -26,7 +26,7 @@ const Research = () => {
               {/* Content */}
               <div className="flex-1">
                 <div className="flex justify-between items-center">
-                  <h2 className="text-lg md:text-xl font-bold">{work.title}</h2>
+                  <h2 className="text-sm md:text-xl font-bold">{work.title}</h2>
                   {work.period && (
                     <span className="italic text-sm text-gray-500">
                       {work.period}
@@ -59,22 +59,27 @@ const Research = () => {
                 )}
               </div>
             </div>
-            <div className="">
-              <div className="flex h-fit gap-2 w-full overflow-x-scroll">
-                {work.images?.map((image, index) => (
-                  <div key={index} className="min-w-96 min-h-72 ">
-                    <img
-                      alt={image.caption}
-                      src={image.image}
-                      className="object-fill w-full h-full"
-                    />
-                  </div>
-                ))}
+            {work.images && (
+              <div className="">
+                <div className="flex  gap-2 w-full overflow-x-scroll">
+                  {work.images.map((image, index) => (
+                    <div
+                      key={index}
+                      className="min-w-96 flex flex-col min-h-72 py-4 "
+                    >
+                      <img
+                        alt={image.caption}
+                        src={image.image}
+                        className="object-fill w-full h-full"
+                      />
+                      <h3 className="text-center font-semibold pt-1">
+                        {image.caption}
+                      </h3>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <h3 className="text-center font-semibold">
-                Solar Dryer Design & Experimental Setup
-              </h3>
-            </div>
+            )}
           </div>
         ))}
       </div>
