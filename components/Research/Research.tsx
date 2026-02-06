@@ -16,7 +16,7 @@ const Research = () => {
           <div key={index} className="">
             <div className="flex items-start gap-2 mb-12 relative">
               {/* Dot */}
-              <div className="flex flex-col items-center">
+              <div className="md:flex flex-col hidden items-center">
                 <GoDotFill className="w-5  h-5 text-blue-500 mt-1" />
                 {index !== researchWorks.length - 1 && (
                   <div className="w-px flex-1 bg-blue-300 mt-1"></div>
@@ -41,7 +41,7 @@ const Research = () => {
                       M.A Waheed
                     </h3>
                     <h3 className="font-semibold">Abstract:</h3>
-                    <p className="mt-2 text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                       {work.description}
                     </p>
                   </div>
@@ -61,16 +61,16 @@ const Research = () => {
             </div>
             {work.images && (
               <div className="">
-                <div className="flex  gap-2 w-full overflow-x-scroll">
+                <div className="flex  gap-6 w-full overflow-x-scroll">
                   {work.images.map((image, index) => (
                     <div
                       key={index}
-                      className="min-w-96 flex flex-col min-h-72 py-4 "
+                      className="min-w-96 flex flex-col min-h-72 py-4 shadow-l"
                     >
                       <img
                         alt={image.caption}
                         src={image.image}
-                        className="object-fill w-full h-full"
+                        className="object-fill w-full h-full shadow-xl"
                       />
                       <h3 className="text-center font-semibold pt-1">
                         {image.caption}
