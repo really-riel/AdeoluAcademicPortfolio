@@ -38,21 +38,21 @@ const About = () => {
               I am a passionate mechanical engineer dedicated to advancing clean
               and accessible energy solutions. My journey is fueled by a strong
               interest in heat and mass transfer, thermal energy storage, and
-              solar technologies, all aimed at supporting Sustainable
-              Development Goal 7. I have hands-on experience developing a
-              solar-powered dryer with thermal storage, which successfully
-              improved drying efficiency for local crops, blending technical
-              innovation with practical, sustainable impact.
+              solar technologies, all aimed at supporting United Nations
+              Sustainable Development Goal 7 (SDG 7). I have hands-on experience
+              developing a solar-powered dryer with thermal storage, which
+              successfully improved drying efficiency for local crops, blending
+              technical innovation with practical and sustainable impact.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Professionally, I work as an Engineering Support Specialist, where
               I enhance operational efficiency, and I also enjoy building web
               applications that solve real-world problems. Beyond my technical
               roles, I actively participate in programs like the Sustainable
-              Energy Accelerator, always seeking to learn and contribute to a
-              greener future. I believe in using engineering and technology to
-              create systems that are not only efficient but also
-              environmentally friendly and equitable.
+              Energy Accelerator by AIIDEV Africa. I am always seeking to learn
+              and contribute to a greener future. I believe in using engineering
+              and technology to create systems that are not only efficient but
+              also environmentally friendly and equitable.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               I am excited by projects that merge renewable energy, smart

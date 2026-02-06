@@ -485,6 +485,23 @@ export const researchWorks = [
     description: `This project introduces a solar drying system that utilises solar energy for drying food substances, reducing agricultural produce wastage and aiding in preservation. The system includes a forced convection solar dryer with thermal energy storage, featuring a solar collector and a drying chamber. Air heated in the collector is channelled into the drying chamber to remove moisture from loaded agricultural produce. A blower efficiently moves the heated air from the solar thermal collector into the drying cabinet. The design considers the location (Abeokuta) and uses meteorological data for specifications. To enhance drying efficiency and maintain consistency, granite is incorporated as a thermal energy storage material. Granite efficiently absorbs and stores excess heat during sunny periods, providing a reserve of thermal energy for cloudy days or night-time. This stored energy helps maintain the drying process when solar radiation is low.
     The dryer's dimensions are 500 mm × 400 mm × 650 mm, constructed from locally available materials like wood, plywood, polyurethane glass, mild steel, and iron net for the trays. The dryer houses three trays placed 100 mm apart. The recorded maximum temperatures in the collector outlet and the top tray of the drying chamber during four distinct experiments under no-load conditions are as follows: 45.7 and 44.6 °C (with blower and no thermal energy storage material), 52.9 and 51.4 °C (with blower and thermal energy storage material), 80.7 and 59.9°C (without blower and no thermal energy storage material), and 74.4 and 62.4°C (without blower and with thermal energy storage material), respectively. These values obtained showed that the dryer is suitable for drying agriculture products like pepper, okra, cassava and plantain.`,
     download: "/Docs/Adeolu_Adeyinka_Research_Project_Undergraduate.pdf",
+    images: [
+      {
+        id: 1,
+        image: "/images/Research/Solar Dryer Design.jpg",
+        caption: "Solar Dryer Setup Design",
+      },
+      {
+        id: 2,
+        image: "/images/Research/Solar Dryer Design 2.jpg",
+        caption: "Solar Dryer Setup Design",
+      },
+      {
+        id: 3,
+        image: "/images/Research/experimental setup.jpg",
+        caption: "Experimental Setup",
+      },
+    ],
   },
 ];
 
