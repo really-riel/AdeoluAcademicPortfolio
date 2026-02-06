@@ -12,16 +12,13 @@ const Research = () => {
     <section className="py-20 px-5">
       <SectionHeading title_1="Research" title_2="Experience" />
 
-      <div className="relative flex flex-col max-w-4xl mx-auto">
+      <ul className="relative flex flex-col max-w-4xl mx-auto ">
         {researchWorks.map((work, index) => (
-          <div key={index} className="">
+          <li key={index} className="">
             <div className="flex items-start gap-2 mb-12 relative">
               {/* Dot */}
-              <div className="md:flex flex-col hidden items-center">
-                <GoDotFill className="w-5  h-5 text-blue-500 mt-1" />
-                {index !== researchWorks.length - 1 && (
-                  <div className="w-px flex-1 bg-blue-300 mt-1"></div>
-                )}
+              <div className="md:flex flex-col  items-center justify-center">
+                <GoDotFill className="w-2  h-2  text-blue-500 md:w-4 md:h-4 md:mt-1 mt-1.5" />
               </div>
 
               {/* Content */}
@@ -50,44 +47,21 @@ const Research = () => {
               </div>
             </div>
             {work.images && (
-              <div className="relative">
-                <div className="flex  gap-6 w-full overflow-x-auto ">
-                  {work.images.map((image, index) => (
-                    <div
-                      key={index}
-                      className="min-w-96 flex flex-col min-h-72 py-4 shadow-l"
-                    >
-                      <img
-                        alt={image.caption}
-                        src={image.image}
-                        className="object-fill w-full h-full shadow-xl"
-                      />
-                      <h3 className="text-center font-semibold pt-1">
-                        {image.caption}
-                      </h3>
-                    </div>
-                  ))}
-                </div>
-                <div className="absolute right-0 top-1/2 transform -translate-1/2">
-                  <div className="rounded-full p-2 bg bg-black/50 ">
-                    <FaChevronRight className="text-blue-100 text-2xl " />
-                  </div>
-                </div>
+              <div className="-mt-10">
+                <PhotoCarousel gallery={work.images} type={"research"} />
+                <a
+                  download
+                  href={work.download}
+                  className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-blue-950 text-white font-bold rounded-md transition-all hover:bg-blue-800 ml-4"
+                >
+                  <Download className="w-4 h-4" />
+                  Paper
+                </a>
               </div>
             )}
-            {work.download && (
-              <a
-                download
-                href={work.download}
-                className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-blue-950 text-white font-bold rounded-md transition-all hover:bg-blue-800"
-              >
-                <Download className="w-4 h-4" />
-                Paper
-              </a>
-            )}
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };
