@@ -17,7 +17,7 @@ const Research = () => {
           <li key={index} className="">
             <div className="flex items-start gap-2 mb-12 relative">
               {/* Dot */}
-              <div className="md:flex flex-col  items-center justify-center">
+              <div className="md:flex  hidden flex-col  items-center justify-center">
                 <GoDotFill className="w-2  h-2  text-blue-500 md:w-4 md:h-4 md:mt-1 mt-1.5" />
               </div>
 
@@ -52,7 +52,7 @@ const Research = () => {
                 <a
                   download
                   href={work.download}
-                  className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-blue-950 text-white font-bold rounded-md transition-all hover:bg-blue-800 ml-4"
+                  className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-blue-950 text-white font-bold rounded-md transition-all hover:bg-blue-800 ml-2"
                 >
                   <Download className="w-4 h-4" />
                   Paper
