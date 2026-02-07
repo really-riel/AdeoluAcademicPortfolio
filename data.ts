@@ -476,6 +476,13 @@ export const researchWorks = [
     period: "Ongoing",
     description: "",
     download: "",
+    images: [
+      {
+        id: 1,
+        image: "/images/Research/Stout beer production Flow chart.png",
+        caption: "Stout Beer Production Process Flowchart",
+      },
+    ],
   },
   {
     title:

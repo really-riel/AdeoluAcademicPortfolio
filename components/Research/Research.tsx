@@ -48,7 +48,7 @@ const Research = () => {
                 <a
                   download
                   href={work.download}
-                  className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-blue-950 text-white font-bold rounded-md transition-all hover:bg-blue-800 ml-1"
+                  className={`mt-4  items-center gap-2 px-6 py-3 bg-blue-950 text-white font-bold rounded-md transition-all hover:bg-blue-800 ml-1 ${work.download === "" ? "hidden" : "inline-flex"}`}
                 >
                   <Download className="w-4 h-4" />
                   Paper
