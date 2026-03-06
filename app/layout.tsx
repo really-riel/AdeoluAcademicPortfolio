@@ -5,6 +5,7 @@ import Provider from "@/components/Hoc/Provider";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Footer/Footer";
 import { ToastContainer } from "react-toastify";
+import { Analytics } from "@vercel/analytics/next";
 
 const font = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={`${font.className} relative antialiased`}>
         {" "}
         <ToastContainer position="top-right" />
+        <Analytics />
         <Provider>
           <div className=" flex flex-col min-h-svh relative w-full overflow-hidden  bg-gray-100 dark:bg-gray-900">
             <svg
