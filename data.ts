@@ -605,14 +605,14 @@ export const SDGgoals = [
   {
     goal: "SDG 9",
     image: "/images/SDG 9.jpg",
-    images: [],
+
     description:
       "Promoting innovation, resilient infrastructure, and sustainable industrial development through engineering and technology.",
   },
   {
     goal: "SDG 13",
     image: "/images/SDG 13.png",
-    images: [],
+
     description:
       "Supporting actions and technologies that help reduce environmental impact and combat climate change.",
   },
