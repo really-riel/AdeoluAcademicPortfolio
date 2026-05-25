@@ -1,6 +1,7 @@
 import SectionHeading from "@/components/Helper/SectionHeading";
-import { hobbies, researchInterest } from "@/data";
+import { hobbies, researchInterest, SDGgoals } from "@/data";
 import { Dot } from "lucide-react";
+import Link from "next/link";
 
 import React from "react";
 
@@ -61,6 +62,34 @@ const About = () => {
               meaningfully to sustainable energy access and inspire others along
               the way.
             </p>
+            <p>Sustainable Development Goals (SDG) I align with:</p>
+            <div className="flex gap-2 flex-col md:flex-row">
+              {SDGgoals.map((goal, index) => (
+                <div
+                  key={index}
+                  className="w-full rounded-2xl bg-white p-6 shadow-md"
+                >
+                  <p className="text-2xl font-bold mb-2">{goal.goal}</p>
+
+                  <p className="text-gray-600 mb-6 max-w-2xl">
+                    {goal.description}
+                  </p>
+
+                  <div className="grid grid-cols-1 md:grid-cols-[250px_1fr] gap-6 items-center">
+                    {/* Main SDG Image */}
+                    <div className="w-full flex justify-center">
+                      <div className="w-52 h-52">
+                        <img
+                          src={goal.image}
+                          alt={goal.goal}
+                          className="w-full h-full object-cover rounded-xl"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* research interest */}
@@ -79,6 +108,15 @@ const About = () => {
                 );
               })}
             </ul>
+            <p>
+              Learn more about my research experience{" "}
+              <Link
+                href={"/research"}
+                className="underline text-blue-500 text-xl"
+              >
+                here
+              </Link>{" "}
+            </p>
           </div>
           <div className="mt-7 flex flex-col gap-5 border-t-4 pt-4">
             <h3 className="text-2xl font-bold text-center">Hobbies</h3>

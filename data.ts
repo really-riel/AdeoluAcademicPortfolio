@@ -99,11 +99,11 @@ export const Experience = [
 
 export const researchInterest = [
   "Heat and Mass Transfer",
-  "Thermal Energy Storage",
+  "Energy Storage",
   "Fluid Mechanics",
-  "Solar Thermal Technologies",
-  "Renewable Energy",
-  "AI & ML in Thermal-Fluid Systems",
+  "Solar Technologies",
+  "Sustainable Energy(Green Hydrogen, Solar, Wind)",
+  "AI & ML in Energy Systems",
 ];
 
 export const hobbies = [
@@ -591,5 +591,29 @@ export const CertificationsData = [
     photo: "/images/Certifications/Adeolu_NYSC_Certificate_page-0001.jpg",
     description:
       "Volunteering: National Youth Service Corps (NYSC) Certificate",
+  },
+];
+
+export const SDGgoals = [
+  {
+    goal: "SDG 7",
+    image: "/images/SDG 7.jpg",
+
+    description:
+      "Advancing reliable, sustainable, and clean energy solutions for communities and industries.",
+  },
+  {
+    goal: "SDG 9",
+    image: "/images/SDG 9.jpg",
+    images: [],
+    description:
+      "Promoting innovation, resilient infrastructure, and sustainable industrial development through engineering and technology.",
+  },
+  {
+    goal: "SDG 13",
+    image: "/images/SDG 13.png",
+    images: [],
+    description:
+      "Supporting actions and technologies that help reduce environmental impact and combat climate change.",
   },
 ];
