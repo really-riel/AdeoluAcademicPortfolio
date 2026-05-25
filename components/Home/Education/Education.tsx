@@ -31,7 +31,7 @@ const Education = () => {
               <span className="font-bold">Degree:</span> Bachelors of
               Engineering in Mechanical Engineering
             </p>
-            <p>
+            {/*  <p>
               {" "}
               <span className="font-bold">Grade: </span>Second Class Upper
               division
@@ -41,7 +41,7 @@ const Education = () => {
                 Cumulative Grade point Average (CGPA):
               </span>{" "}
               4.0/5.0 (80%)
-            </p>
+            </p> */}
             <p>
               <span className="font-bold">Thesis Title:</span> Development of a
               Forced Convection Solar Cabinet Dryer with Thermal Energy Storage

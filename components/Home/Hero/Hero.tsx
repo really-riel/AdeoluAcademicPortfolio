@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="text-[clamp(1rem,_0.2rem_+_1vw,_2rem)]  flex flex-col justify-center lg:flex-row-reverse  mx-auto gap-6">
         <figure className="w-52 h-52 blob max-sm[]:bg-red-500 md:w-80 md:h-80 lg:w-110 lg:h-110 rounded-[50%] overflow-hidden mx-auto">
           <img
-            src={"images/profilePic.jpg"}
+            src={"images/profilePic.png"}
             alt="Irregular frame"
             className="object-cover object-top w-full h-full irregular-frame-image"
           />
