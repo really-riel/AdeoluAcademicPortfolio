@@ -27,11 +27,11 @@ const Hero = () => {
               Thermal and Sustainable Energy Systems
             </span>
           </p>
-          <figure className="max-w-72 md:max-w-90">
+          <figure className="max-w-72 h-10 md:h-fit md:max-w-90">
             <img
               src="images/UN SDGoals.png"
               alt="UN Sustainable development goals"
-              className="w-full"
+              className="w-full h-full"
             />
           </figure>
           <p>
