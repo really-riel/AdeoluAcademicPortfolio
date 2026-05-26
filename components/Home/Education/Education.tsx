@@ -50,7 +50,7 @@ const Education = () => {
               <span className="font-bold">Supervisor:</span> Prof. M.A
               Waheed{" "}
             </p>
-            <div className="">
+            {/* <div className="">
               <a
                 href="/Docs/Adeolu-Transcript.pdf"
                 download
@@ -59,7 +59,7 @@ const Education = () => {
                 <Download />
                 <p>Transcript</p>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

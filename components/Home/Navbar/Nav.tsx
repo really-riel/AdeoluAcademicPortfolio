@@ -72,7 +72,7 @@ const Nav = ({ openNav }: Props) => {
         </div>
         <div className="flex items-center space-x-2">
           <a
-            href="/Docs/Adeolu_Adeyinka_CV_Transcript_.pdf"
+            href="/Docs/Adeolu_Adeyinka_CV.pdf"
             className="boxborder relative z-20 inline-flex items-center justify-center w-auto px-2  py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-blue-900 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none  gap-1 text-sm "
             download
           >
