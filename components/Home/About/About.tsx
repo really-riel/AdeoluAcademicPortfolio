@@ -67,9 +67,11 @@ const About = () => {
               {SDGgoals.map((goal, index) => (
                 <div
                   key={index}
-                  className="w-full rounded-2xl bg-white p-6 shadow-md"
+                  className="w-full rounded-2xl bg-white  p-6 shadow-md"
                 >
-                  <p className="text-2xl font-bold mb-2">{goal.goal}</p>
+                  <p className="text-2xl font-bold mb-2 dark:text-gray-600">
+                    {goal.goal}
+                  </p>
 
                   <p className="text-gray-600 mb-6 max-w-2xl">
                     {goal.description}
